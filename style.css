@@ -1,0 +1,739 @@
+/* -------------------------------
+Theme Name: Axit
+Theme URI: http://example.com/
+Description: This is a corporate website tamplate......!!!
+Author: Abdur Rahim
+Author URI: https://www.facebook.com/FreelancerRahim26
+Tags:  Corporate-tamplate
+Version: 1.0
+
+
+Table Content:
+----------------------------------------
+    1.  Typrography area
+    2.  header area
+    3.  hero area
+    4.  social area
+    5.  Feature area 
+    6.  Section area 01
+    7.  Section area 02
+    8.  Awesome area
+    9.  Price area
+    10.  Customer area
+    11.  Design area
+    12.  Contact area
+    13.  footer area
+----------------------------------------*/
+
+/* 1. Typrography 
+---------------------------------------------*/
+
+@font-face {
+    font-family: 'gotham bold';
+    src: url(fonts/GothamRoundedBold_21016.woff);
+}
+
+@font-face {
+    font-family: 'gotham book';
+    src: url(fonts/GothamRoundedBook_21018.woff);
+}
+
+@font-face {
+    font-family: "gotham medium";
+    src: url(fonts/GothamRoundedMedium_21022.woff);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+    font-family: 'gotham book', sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+body,
+p {
+    color: #6c7279bf;
+    line-height: 1.6;
+    font-family: 'gotham book', sans-serif;
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'gotham bold' sans-serif;
+    font-weight: 700;
+    color: #233148;
+}
+
+input, 
+button,
+textarea {
+    border: 0;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+}
+
+/*  1. Typrography area end  --------------------------*/
+
+
+
+/*  2. header area start 
+--------------------------------------------------*/
+header.header-area {
+    background: #00000085;
+    padding: 20px 3%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.menu {
+    text-align: right;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 0 0 40px;
+}
+
+.menu li a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    display: block;
+    padding: 3px 0;
+}
+
+.menu ul {
+    margin: 0;
+}
+
+.menu li a:hover {
+    color: #f98837;
+}
+/*  2. header area end  --------------------------*/
+
+
+
+/*  3. Hero area start 
+--------------------------------------------------*/
+
+.hero-content {
+    /* padding: 100px 0; */
+}
+
+.hero-content h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-content h1 span {
+    color: #FF8B38;
+    font-weight: 300;
+}
+
+.hero-content h2 {
+    position: relative;
+    color: #fff;
+}
+
+.hero-content h2:before {content: '';position: absolute;width: 60px;height: 2px;background: white;bottom: -10px;left: 0;}
+
+.hero-content p {
+    margin: 40px 0 70px;
+    color: #fff;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+section.hero-area {
+    background: url(img/hero-bg.png);
+    height: calc(100vh - 62px);
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+}
+
+a.button:hover {
+    border: 1px solid #FF8B38;
+    color: #FF8B38;
+}
+
+.sign-up {
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sign-up h4 {
+    background: #F5F5F5;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+.sign-up h4 span {
+    color: #ff8b38;
+}
+
+.sign-up .content {
+    padding: 30px;
+}
+
+.sign-up .content input {
+    width: 100%;
+    /* line-height: 40px; */
+    border: 0;
+    box-shadow: 0px 1px 0 1px #d0cdcd63;
+    margin: 0 0 30px;
+    padding: 10px 15px;
+    outline: none;
+    transition: .3s;
+}
+
+.sign-up .content input:focus {
+    box-shadow: 0px 1px 0 1px #ff8b3878;
+}
+
+.sign-up button {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #FF8B38;
+    padding: 12px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+}
+
+.sign-up .content input[type="password"] {
+    margin: 0;
+}
+
+section.hero-area .row {
+    align-items: center;
+    justify-content: space-between;
+}
+/*  3. Hero area end  --------------------------*/
+
+
+
+/*  4. Social area start 
+--------------------------------------------------*/
+section.social-area {
+    padding: 10px 0;
+}
+
+.social-content p {
+    font-size: 13px;
+    margin: 0;
+}
+
+.social-link ul {
+    margin: 0;
+    text-align: right;
+}
+
+.social-link li {
+    display: inline-block;
+}
+
+.social-link a {
+    display: block;
+    width: 40px;
+    color: #CCCCCC;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+}
+
+section.social-area .row {
+    align-items: center;
+}
+
+.social-link a:hover {
+    border: 1px solid #ff9b51;
+    color: #ff9b51;
+}
+
+.social-content h4 {
+    margin: 0;
+}
+/*  4. Social area end  --------------------------*/
+
+
+
+/*  5. Feature area start 
+--------------------------------------------------*/
+section.feature-area {
+    background: #F5F5F5;
+    padding: 100px 0;
+}
+
+.feature-tab .nav-tabs {
+    width: 100px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 0;
+    border-radius: 5px;
+}
+
+.feature-tab {
+    padding: 0 0 0 150px;
+    position: relative;
+    min-height: 303px;
+    display: flex;
+    align-items: center;
+}
+
+.feature-tab .nav-tabs li {
+    width: 100%;
+    float: none;
+}
+
+.feature-tab .nav-tabs li a {
+    background: #333333;
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    margin: 0 0 1px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tab-content p {
+    color: #a79d9d;
+    margin: 40px 0;
+}
+
+a.button.tab {
+    background: #FF8B38;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+a.button.tab:hover {
+    background: transparent;
+    border-color: #FF8B38;
+}
+
+.feature-tab .nav-tabs li a.active {
+    background: #FF8B38;
+}
+
+.feature-tab .nav-tabs li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+
+.feature-tab .nav-tabs li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+/*  5. Feature area end  --------------------------*/
+
+
+
+/*  6. Section area start 
+--------------------------------------------------*/
+section.Section-area {
+    padding: 100px 0;
+}
+
+section.Section-area .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+h4.title {
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 30px;
+    text-transform: capitalize;
+}
+
+h4.title::before {content: '';position: absolute;width: 50px;height: 2px;background: #ff8b38;bottom: 0;}
+
+.sublist-content ul li {
+    position: relative;
+    padding: 0 0 0 50px;
+    margin: 30px 0 0 0;
+}
+
+.sublist-content ul li i {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 35px;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 50%;
+    border: 2px solid #ff8b38;
+    color: #ff8b38;
+}
+
+.sublist-content ul li h5 {
+    text-transform: capitalize;
+}
+
+.sublist-content ul li p {
+    font-size: 13px;
+}
+/*  6. Section area end  --------------------------*/
+
+
+
+/*  7. picture area start 
+--------------------------------------------------*/
+section.picter-area {
+    background: #F5F5F5;
+    padding: 100px 0;
+}
+
+section.picter-area .row {
+    justify-content: space-between;
+    align-items: center;
+}
+/*  7. picture area end  --------------------------*/
+
+
+
+
+/*  8. Awesome area start 
+--------------------------------------------------*/
+section.awesome-area {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.heading {
+    margin: 0 0 80px;
+    text-align: center;
+}
+
+.heading h3 {
+    position: relative;
+    padding: 0 0 20px;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+}
+
+.heading h3:before {
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background: #ff8b38;
+    content: '';
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.awesome-item i {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+    line-height: 76px;
+    font-size: 22px;
+    color: #ff8b38;
+}
+
+.awesome-item h4 {
+    margin: 30px 0;
+}
+/*  8. Awesome area end  --------------------------*/
+
+
+
+
+/*  9. Price area start 
+--------------------------------------------------*/
+section.price-area {
+    background: #F5F5F5;
+    padding: 100px 0;
+}
+
+.price-item {
+    text-align: center;
+    background: #333333;
+    margin: 39px 0 0 0;
+    transition: .3s;
+}
+
+.price-item h4 {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px 0;
+    border-bottom: 1px solid #fff;
+    text-transform: capitalize;
+}
+
+.price-item h2 {
+    color: #fff;
+    font-size: 80px;
+    margin: 30px 0 10px;
+}
+
+.price-item h2 span {
+    font-size: 30px;
+}
+
+.price-item p {
+    text-transform: capitalize;
+    font-style: italic;
+    margin: 0 0 30px;
+}
+
+.price-item .feature {
+    background: #fff;
+}
+
+.price-item .feature li {
+    padding: 10px;
+    border-bottom: 1px solid #f5f5f5;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.price-item .feature li:hover {
+    padding-left: 20px;
+    color: #ff8b38;
+}
+
+.popular h5 {
+    background: #FF8B38;
+    margin: 0;
+    color: #fff;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.popular {
+    height: 3px;
+    transition: .3s;
+}
+
+.price-item:hover .popular {height: 39px;}
+
+section.price-area .row:last-child {
+    align-items: flex-end;
+}
+
+.price-item:hover {
+    margin: 0;
+}
+
+/*  9. Price area end  --------------------------*/
+
+
+
+/*  10. Customer area start 
+--------------------------------------------------*/
+section.customer-area {
+    padding: 100px 0;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.customer-item .say {
+    background: #F5F5F5;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    font-style: italic;
+}
+
+.customer-item .say:before {content: '';position: absolute;border-top: 15px solid whitesmoke;border-left: 12px solid transparent;border-right: 12px solid transparent;bottom: -15px;left: 23px;}
+
+.customer-item .author {
+    position: relative;
+    margin: 25px 0 0 0;
+    min-height: 70px;
+    padding: 0 0 0 85px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.customer-item .author img {
+    top: 0;
+    position: absolute;
+    max-width: 70px;
+    left: 0;
+    border: 2px solid #ff8b38;
+    border-radius: 50%;
+}
+
+.customer-item .author h4, .customer-item .author p {
+    margin: 0;
+    text-transform: capitalize;
+}
+/*  10. Customer area end  --------------------------*/
+
+
+
+/*  11. Design area start 
+--------------------------------------------------*/
+section.design-area {
+    padding: 80px 0;
+    background: url(img/subscribe.png) no-repeat center / cover;
+    position: relative;
+    z-index: 9;
+}
+
+section.design-area .heading h3 {
+    color: #fff;
+}
+
+section.design-area .heading p {
+    color: #fff;
+    margin: 0 0 40px;
+}
+
+section.design-area .heading {
+    margin: 0;
+}
+
+section.design-area::before {content: '';position: absolute;width: 100%;height: 100%;background: #02052385;left: 0;top: 0;z-index: -1;}
+/*  11. Design area end  --------------------------*/
+
+
+
+/*  12. Contact area start 
+--------------------------------------------------*/
+section.contact-area {
+    padding: 100px 0;
+}
+
+.form-content {text-align: center;}
+
+.form-content input, .form-content textarea {
+    border-bottom: 1px solid #DEDEDE;
+    width: 100%;
+    padding: 10px;
+    margin: 0 0 20px;
+    transition: .3s;
+}
+
+.form-content textarea {
+    max-height: 170px;
+    resize: none;
+}
+
+::placeholder {
+    text-transform: capitalize;
+}
+
+.form-content input:focus, .form-content textarea:focus {
+    border-color: #ff8b38;
+}
+
+.form-content button {
+    margin: 30px 0 0 0;
+    border: 1px solid #ff8b38;
+    outline: none;
+    background: #ff8b38;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.form-content button:hover {
+    box-shadow: 4px 4px 0 #ff8b38;
+    background: transparent;
+    color: #ff8b38;
+}
+/*  12. Contact area end  --------------------------*/
+
+
+
+/*  13. Footer area start 
+--------------------------------------------------*/
+footer.footer-area {
+    background: #000000;
+    padding: 25px 0;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media li a {
+    width: 30px;
+    display: block;
+    text-align: center;
+    color: #CCCCCC;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.copyright p {
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.copyright p a {
+    text-transform: uppercase;
+    color: #ff8b38;
+    font-weight: 700;
+}
+
+.social-media li a:hover {
+    color: #ff8b38;
+}
+/*  13. Footer area end  --------------------------*/
+
